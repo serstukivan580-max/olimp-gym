@@ -1,23 +1,25 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Olimp Gym — тренажерний зал у Василькові | Абонемент від 1100 грн</title>
-  <meta name="description" content="Olimp Gym — тренажерний зал у Василькові, де світло не за графіком: працюємо під час відключень, є гаряча вода й бігові доріжки. Абонемент від 1100 грн.">
-  <meta name="theme-color" content="#100F0D">
+  <meta name="description" content="Olimp Gym — фітнес-клуб у Василькові з обладнанням світового рівня. Світло, гаряча вода й бігові доріжки працюють навіть під час відключень. Абонемент від 1100 грн.">
+  <meta name="theme-color" content="#0B0B0C">
   <link rel="icon" href="assets/logo/torch.svg" type="image/svg+xml">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="uk_UA">
-  <meta property="og:title" content="Olimp Gym — залізо, світло і гаряча вода">
-  <meta property="og:description" content="Тренажерний зал у Василькові. Працюємо під час відключень. Абонемент від 1100 грн.">
+  <meta property="og:title" content="Olimp Gym — фітнес-клуб у Василькові">
+  <meta property="og:description" content="Тренуйтеся без пауз: світло й гаряча вода навіть під час відключень. Абонемент від 1100 грн.">
   <meta property="og:image" content="https://serstukivan580-max.github.io/olimp-gym/assets/photos/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/photos/lights-on.webp" media="(min-width: 701px)">
+  <link rel="preload" as="image" href="assets/photos/lights-on-mobile.webp" media="(max-width: 700px)">
   <link rel="stylesheet" href="css/style.css">
 
   <script type="application/ld+json">
@@ -26,6 +28,7 @@
     "@type": "ExerciseGym",
     "name": "Olimp Gym",
     "image": "https://serstukivan580-max.github.io/olimp-gym/assets/photos/og.jpg",
+    "url": "https://serstukivan580-max.github.io/olimp-gym/",
     "telephone": "+380734319626",
     "address": {
       "@type": "PostalAddress",
@@ -42,10 +45,10 @@
     "priceRange": "250–9950 UAH",
     "makesOffer": [
       { "@type": "Offer", "name": "Ранковий абонемент, 1 місяць", "price": "1100", "priceCurrency": "UAH" },
-      { "@type": "Offer", "name": "Повний абонемент, 1 місяць", "price": "1300", "priceCurrency": "UAH" },
-      { "@type": "Offer", "name": "Повний абонемент, 3 місяці", "price": "3650", "priceCurrency": "UAH" },
-      { "@type": "Offer", "name": "Повний абонемент, 6 місяців", "price": "5850", "priceCurrency": "UAH" },
-      { "@type": "Offer", "name": "Повний абонемент, 12 місяців", "price": "9950", "priceCurrency": "UAH" },
+      { "@type": "Offer", "name": "Абонемент, 1 місяць", "price": "1300", "priceCurrency": "UAH" },
+      { "@type": "Offer", "name": "Абонемент, 3 місяці", "price": "3650", "priceCurrency": "UAH" },
+      { "@type": "Offer", "name": "Абонемент, 6 місяців", "price": "5850", "priceCurrency": "UAH" },
+      { "@type": "Offer", "name": "Абонемент, 12 місяців", "price": "9950", "priceCurrency": "UAH" },
       { "@type": "Offer", "name": "Разове відвідування", "price": "250", "priceCurrency": "UAH" }
     ],
     "sameAs": ["https://www.instagram.com/olimpgym_fitnessclub/"]
@@ -63,273 +66,249 @@
       <path d="M32 13c3 4 4.5 7.5 3.5 10.5-.6 2-2 3-3.5 3s-2.9-1-3.5-3c-1-3 .5-6.5 3.5-10.5z" fill="#F29A1A"/>
       <path d="M23 30h18l-1.5 4h-15z" fill="#1F5FBF"/><path d="M25 35h14l-4.5 23h-5z" fill="#1F5FBF"/>
     </symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
-    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r=".5" fill="currentColor"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 15a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="i-track" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h13.5l3.5-9"/><path d="M5 21l1-3M15 21l-1-3"/><circle cx="12" cy="5" r="1.6"/><path d="M9 13l2-4 3 2 2-1"/></g></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 9.5a13.5 13.5 0 0 1 18 0M6 13a9 9 0 0 1 12 0M9 16.5a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></g></symbol>
+    <symbol id="i-coach" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-1.5A5.5 5.5 0 0 1 10.5 14h3a5.5 5.5 0 0 1 5.5 5.5V21"/></g></symbol>
   </svg>
 
   <a class="skip" href="#main">Перейти до змісту</a>
 
   <!-- ================= HEADER ================= -->
   <header class="header">
-    <div class="header__inner">
-      <a class="logo" href="#top" aria-label="Olimp Gym — на початок">
-        <svg class="logo__mark" aria-hidden="true"><use href="#i-torch"/></svg>
-        <span>Olimp<b>Gym</b></span>
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Olimp Gym — на початок">
+        <svg class="brand__mark" aria-hidden="true"><use href="#i-torch"/></svg>
+        <span class="brand__name">Olimp<small>Fitness club</small></span>
       </a>
+
       <nav class="nav" id="nav" aria-label="Основна навігація">
-        <a href="#light"><i>01</i>Світло</a>
-        <a href="#hall"><i>02</i>Зал</a>
-        <a href="#prices"><i>03</i>Абонементи</a>
-        <a href="#trainers"><i>04</i>Тренери</a>
-        <a href="#contacts"><i>05</i>Як дійти</a>
+        <a href="#club">Клуб</a>
+        <a href="#prices">Абонементи</a>
+        <a href="#trainers">Тренери</a>
+        <a href="#contacts">Контакти</a>
+        <div class="nav__extra">
+          <a class="nav__phone" href="tel:+380734319626">073 431 96 26</a>
+          <a class="btn btn--gold btn--block" href="#booking">Записатися на пробне</a>
+        </div>
       </nav>
-      <span class="status" data-status><i></i><span>…</span></span>
-      <a class="btn btn--flame btn--sm header__cta" href="#join">Записатися</a>
-      <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+
+      <a class="header__phone" href="tel:+380734319626">073 431 96 26</a>
+      <a class="btn btn--line btn--sm header__cta" href="#booking">Пробне тренування</a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
     </div>
   </header>
 
   <main id="main">
     <!-- ================= HERO ================= -->
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero__grid wrap">
-        <p class="hero__kicker mono">Тренажерний зал · Васильків, Грушевського 17</p>
+      <picture class="hero__media">
+        <source media="(max-width: 700px)" srcset="assets/photos/lights-on-mobile.webp">
+        <!-- TODO: замінити на реальне фото залу -->
+        <img src="assets/photos/lights-on.webp" width="1536" height="864" alt="Зал Olimp Gym увечері" fetchpriority="high">
+      </picture>
 
-        <h1 class="hero__title" id="hero-title">
-          <span class="l1">Залізо,</span>
-          <span class="l2 serif">світло</span>
-          <span class="l3">і гаряча вода.</span>
-        </h1>
-
-        <figure class="hero__photo">
-          <!-- TODO: замінити на реальне фото залу -->
-          <img src="assets/photos/squat.webp" width="1024" height="1536" alt="Дівчина присідає зі штангою в залі Olimp Gym" fetchpriority="high">
-          <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
-            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-            <circle cx="100" cy="100" r="99" fill="#FFC72C"/>
-            <text textLength="486" lengthAdjust="spacing"><textPath href="#circle" startOffset="0">ПРАЦЮЄМО ПРИ ВІДКЛЮЧЕННЯХ · OLIMP GYM · </textPath></text>
-            <use href="#i-torch" x="70" y="66" width="60" height="60"/>
-          </svg>
-        </figure>
-
-        <div class="hero__text">
-          <p class="hero__lead">Тренуйтеся щодня — і&nbsp;під&nbsp;час відключень теж. У&nbsp;залі світло, працюють доріжки, є&nbsp;інтернет і&nbsp;гарячий душ.</p>
-          <div class="hero__actions">
-            <a class="btn btn--flame" href="#join">Записатися на пробне <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            <a class="link" href="tel:+380734319626">073 431 96 26</a>
-          </div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Фітнес-клуб · Васильків</p>
+        <h1 class="hero__title reveal" id="hero-title">Тренуйтеся<br><span>без пауз</span></h1>
+        <p class="hero__lead reveal">Тренажерний зал з&nbsp;обладнанням світового рівня. Світло, гаряча вода й&nbsp;бігові доріжки працюють навіть під час відключень.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--gold" href="#booking">Записатися на пробне</a>
+          <a class="btn btn--line" href="#prices">Абонементи</a>
         </div>
-
-        <p class="hero__live mono" aria-live="polite">
-          <span data-clock>Васильків</span>
-          <span data-countdown></span>
-        </p>
       </div>
-    </section>
 
-    <!-- ================= ГРАФІК ВІДКЛЮЧЕНЬ ================= -->
-    <section class="light" id="light" aria-labelledby="light-title">
-      <div class="wrap">
-        <header class="light__head">
-          <p class="mono label">01 / Світло</p>
-          <h2 class="h2" id="light-title">Графік відключень?<br><span class="serif">У&nbsp;нас свій.</span></h2>
-          <p class="light__note">Поки місто живе за чергами, у&nbsp;залі все працює за&nbsp;розкладом клубу.</p>
-        </header>
-
-        <div class="outage" data-outage>
-          <div class="outage__hours" aria-hidden="true" data-hours></div>
-          <div class="outage__row outage__row--city">
-            <span class="outage__label">Місто<sup>*</sup></span>
-            <div class="outage__cells" data-city></div>
-          </div>
-          <div class="outage__row outage__row--gym">
-            <span class="outage__label">Olimp Gym</span>
-            <div class="outage__cells" data-gym></div>
-          </div>
-          <span class="outage__now" data-now aria-hidden="true"><b>зараз</b></span>
-        </div>
-
-        <div class="outage__foot">
-          <ul class="legend mono">
-            <li><i class="c-on"></i>світло є</li>
-            <li><i class="c-off"></i>відключення</li>
-            <li><i class="c-gym"></i>зал відчинено</li>
-          </ul>
-          <p class="mono small">* умовний графік для прикладу. Зал — за&nbsp;сьогоднішнім розкладом.</p>
-        </div>
-
-        <ul class="perks">
-          <li><span class="mono">01</span><b>Стабільне світло</b>у всьому клубі</li>
-          <li><span class="mono">02</span><b>Гаряча вода</b>у душових</li>
-          <li><span class="mono">03</span><b>Бігові доріжки</b>працюють</li>
-          <li><span class="mono">04</span><b>Інтернет</b>для вашого комфорту</li>
-          <li><span class="mono">05</span><b>Музика</b>і приємна атмосфера</li>
+      <div class="container">
+        <ul class="facts">
+          <li>
+            <span class="facts__label"><i class="dot" data-dot></i><span data-status>Сьогодні</span></span>
+            <b data-today>07:00 – 22:00</b>
+          </li>
+          <li><span class="facts__label">Абонемент</span><b>від 1 100 ₴ / міс</b></li>
+          <li><span class="facts__label">Під час відключень</span><b>Світло й гаряча вода</b></li>
+          <li><span class="facts__label">Адреса</span><b>Грушевського, 17</b></li>
         </ul>
       </div>
     </section>
 
-    <!-- ================= ЗАЛ ================= -->
-    <section class="hall" id="hall" aria-labelledby="hall-title">
-      <div class="wrap">
-        <header class="hall__head">
-          <p class="mono label">02 / Зал</p>
-          <h2 class="h2" id="hall-title">Великі вікна,<br><span class="serif">важке залізо.</span></h2>
-        </header>
-        <!-- TODO: замінити згенеровані фото на реальні фото залу -->
-        <div class="hall__grid">
-          <figure class="ph ph--a"><div class="ph__img"><img src="assets/photos/functional.webp" width="1536" height="1024" alt="Функціональна зона з TRX, гирями й боксами" loading="lazy"></div><figcaption><span class="mono">01</span>Функціональна зона — TRX, гирі, бокси</figcaption></figure>
-          <figure class="ph ph--b"><div class="ph__img"><img src="assets/photos/dumbbells.webp" width="1024" height="1536" alt="Ряд гантелей біля дзеркал" loading="lazy"></div><figcaption><span class="mono">02</span>Вільні ваги</figcaption></figure>
-          <figure class="ph ph--c"><div class="ph__img"><img src="assets/photos/cardio.webp" width="1536" height="1024" alt="Бігові доріжки біля панорамних вікон" loading="lazy"></div><figcaption><span class="mono">03</span>Кардіо біля вікон</figcaption></figure>
-          <figure class="ph ph--d"><div class="ph__img"><img src="assets/photos/barbell.webp" width="1024" height="1536" alt="Руки в магнезії на грифі штанги" loading="lazy"></div><figcaption><span class="mono">04</span>Штанги й плити</figcaption></figure>
-          <figure class="ph ph--e"><div class="ph__img"><img src="assets/photos/lights-on.webp" width="1536" height="864" alt="Освітлений зал увечері, за вікнами темне місто" loading="lazy"></div><figcaption><span class="mono">05</span>Вечір, у місті темно. У нас — світло.</figcaption></figure>
+    <!-- ================= КЛУБ ================= -->
+    <section class="section" id="club" aria-labelledby="club-title">
+      <div class="container">
+        <div class="head reveal">
+          <p class="eyebrow">01 · Клуб</p>
+          <h2 class="h2" id="club-title">Коли в місті темно, <span>у&nbsp;залі — світло.</span></h2>
+          <p class="head__text">Графіки відключень не впливають на ваші тренування — приходьте в будь-який час роботи клубу.</p>
         </div>
-        <p class="hall__quote"><span class="serif">«Світове обладнання»</span> — так написано в нашому Instagram. Приходьте перевірити.</p>
+
+        <ul class="features">
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-bolt"/></svg><h3>Стабільне світло</h3><p>У всьому клубі, навіть коли в місті відключення.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-drop"/></svg><h3>Гаряча вода</h3><p>У душових — щоб після тренування не поспішати додому.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-track"/></svg><h3>Бігові доріжки</h3><p>Кардіозона працює без перерв на графіки.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-award"/></svg><h3>Світове обладнання</h3><p>Тренажери й вільні ваги для будь-якої цілі.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-coach"/></svg><h3>Професійні тренери</h3><p>Допоможуть з технікою та програмою тренувань.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="#i-wifi"/></svg><h3>Інтернет і музика</h3><p>Wi-Fi та приємна атмосфера в залі.</p></li>
+        </ul>
+
+        <!-- TODO: замінити згенеровані фото на реальні фото залу -->
+        <div class="gallery" data-gallery>
+          <button class="shot g1 reveal" type="button" aria-label="Відкрити фото: тренажерна зона"><img src="assets/photos/hero.webp" width="1536" height="864" alt="Тренажерна зона з панорамними вікнами" loading="lazy"><span>Тренажерна зона</span></button>
+          <button class="shot g2 reveal" type="button" aria-label="Відкрити фото: кардіозона"><img src="assets/photos/cardio.webp" width="1536" height="1024" alt="Бігові доріжки біля вікон" loading="lazy"><span>Кардіозона</span></button>
+          <button class="shot g3 reveal" type="button" aria-label="Відкрити фото: вільні ваги"><img src="assets/photos/dumbbells.webp" width="1024" height="1536" alt="Ряд гантелей" loading="lazy"><span>Вільні ваги</span></button>
+          <button class="shot g4 reveal" type="button" aria-label="Відкрити фото: штанги"><img src="assets/photos/barbell.webp" width="1024" height="1536" alt="Гриф штанги в руках" loading="lazy"><span>Штанги</span></button>
+          <button class="shot g5 reveal" type="button" aria-label="Відкрити фото: функціональна зона"><img src="assets/photos/functional.webp" width="1536" height="1024" alt="Функціональна зона з TRX і гирями" loading="lazy"><span>Функціональна зона</span></button>
+          <button class="shot g6 reveal" type="button" aria-label="Відкрити фото: силова зона"><img src="assets/photos/squat.webp" width="1024" height="1536" alt="Присідання зі штангою" loading="lazy"><span>Силова зона</span></button>
+        </div>
       </div>
     </section>
 
     <!-- ================= АБОНЕМЕНТИ ================= -->
-    <section class="prices paper" id="prices" aria-labelledby="prices-title">
-      <div class="wrap">
-        <header class="prices__head">
-          <p class="mono label">03 / Абонементи</p>
-          <h2 class="h2" id="prices-title">Абонементи<br><span class="serif">на будь-який темп.</span></h2>
-          <div class="toggle" role="radiogroup" aria-label="Час відвідування">
-            <button type="button" role="radio" aria-checked="true" data-kind="full"><b>Повний день</b><span class="mono">07:00–22:00</span></button>
-            <button type="button" role="radio" aria-checked="false" data-kind="morning"><b>Ранок</b><span class="mono">07:00–16:00</span></button>
-          </div>
-        </header>
+    <section class="section section--alt" id="prices" aria-labelledby="prices-title">
+      <div class="container">
+        <div class="head reveal">
+          <p class="eyebrow">02 · Абонементи</p>
+          <h2 class="h2" id="prices-title">Абонементи. <span>Чим довше — тим вигідніше.</span></h2>
+          <p class="head__text">Доступ у всі години роботи клубу. Оберіть термін — і ми підставимо його в заявку.</p>
+        </div>
 
-        <ul class="tickets" data-tickets aria-live="polite"></ul>
+        <div class="plans" data-plans></div>
 
-        <div class="prices__foot">
-          <ul class="receipt mono" data-extras></ul>
-          <p class="small" data-prices-note></p>
+        <div class="plans__more">
+          <div class="morning reveal" data-morning></div>
+          <ul class="extras reveal" data-extras></ul>
         </div>
       </div>
     </section>
 
     <!-- ================= ТРЕНЕРИ ================= -->
-    <section class="trainers" id="trainers" aria-labelledby="trainers-title">
-      <div class="wrap">
-        <header class="trainers__head">
-          <p class="mono label">04 / Тренери</p>
-          <h2 class="h2" id="trainers-title">Люди,<br><span class="serif">які поставлять техніку.</span></h2>
-        </header>
-        <ol class="roster" data-trainers></ol>
-        <a class="roster__jobs" href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener">
-          <span class="mono">Вакансія</span> Шукаємо тренерів і адміністратора — пишіть у Direct <svg aria-hidden="true"><use href="#i-arrow"/></svg>
-        </a>
+    <section class="section" id="trainers" aria-labelledby="trainers-title">
+      <div class="container">
+        <div class="head reveal">
+          <p class="eyebrow">03 · Тренери</p>
+          <h2 class="h2" id="trainers-title">Тренери клубу. <span>Техніка, програма, результат.</span></h2>
+        </div>
+        <ul class="coaches" data-trainers></ul>
       </div>
-      <div class="peek" aria-hidden="true" data-peek></div>
     </section>
 
     <!-- ================= ЗАПИС ================= -->
-    <section class="join paper" id="join" aria-labelledby="join-title">
-      <div class="wrap join__grid">
-        <div class="join__intro">
-          <p class="mono label">Запис</p>
-          <h2 class="h2" id="join-title">Перше тренування<br><span class="serif">почнемо зі знайомства.</span></h2>
-          <ol class="steps">
-            <li><span class="mono">01</span>Ви залишаєте номер</li>
-            <li><span class="mono">02</span>Адміністратор передзвонює й підбирає час</li>
-            <li><span class="mono">03</span>Приходите на Грушевського, 17</li>
+    <section class="section section--alt" id="booking" aria-labelledby="booking-title">
+      <div class="container booking">
+        <div class="booking__media reveal">
+          <img src="assets/photos/functional.webp" width="1536" height="1024" alt="" loading="lazy">
+          <ol class="booking__steps">
+            <li><b>01</b>Залишаєте заявку</li>
+            <li><b>02</b>Адміністратор передзвонює й підбирає час</li>
+            <li><b>03</b>Приходите на тренування</li>
           </ol>
-          <p class="join__direct">Не любите форми? <a href="tel:+380734319626">Подзвоніть</a> або напишіть в <a href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener">Instagram</a>.</p>
         </div>
 
-        <form class="form" id="join-form" novalidate>
-          <p class="form__title mono"><span>Анкета</span><span>№ <b data-form-no>0001</b></span></p>
-          <div class="field">
-            <label for="f-name">Ім'я</label>
-            <input id="f-name" name="name" type="text" autocomplete="given-name" required minlength="2" placeholder="Як до вас звертатися">
-            <span class="field__err" id="f-name-err"></span>
-          </div>
-          <div class="field">
-            <label for="f-phone">Телефон</label>
-            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+380 __ ___ __ __">
-            <span class="field__err" id="f-phone-err"></span>
-          </div>
-          <div class="field">
-            <label for="f-plan">Абонемент</label>
-            <select id="f-plan" name="plan"></select>
-          </div>
-          <div class="field">
-            <label for="f-trainer">Тренер</label>
-            <select id="f-trainer" name="trainer"></select>
-          </div>
-          <fieldset class="field chips">
-            <legend>Коли зручно</legend>
-            <label><input type="radio" name="time" value="Ранок (07–12)"><span>Ранок</span></label>
-            <label><input type="radio" name="time" value="День (12–17)"><span>День</span></label>
-            <label><input type="radio" name="time" value="Вечір (17–22)" checked><span>Вечір</span></label>
-          </fieldset>
+        <div class="booking__body reveal">
+          <p class="eyebrow">04 · Запис</p>
+          <h2 class="h2" id="booking-title">Пробне тренування. <span>Почніть зі знайомства з клубом.</span></h2>
 
-          <button class="btn btn--ink btn--block" type="submit">
-            <span class="when-idle">Записатися</span><span class="when-sending">Надсилаємо…</span>
-            <svg aria-hidden="true"><use href="#i-arrow"/></svg>
-          </button>
-
-          <div class="form__result" role="status" aria-live="polite">
-            <div class="res res--success"><b>Заявку отримано.</b> Передзвонимо найближчим часом.</div>
-            <div class="res res--error"><b>Не вдалося надіслати.</b> Зателефонуйте: <a href="tel:+380734319626">073 431 96 26</a>.</div>
-            <div class="res res--fallback">
-              <b>Майже готово.</b> Текст заявки скопійовано — надішліть його у Viber або просто зателефонуйте.
-              <span class="res__actions">
-                <a class="btn btn--ink btn--sm" href="viber://chat?number=%2B380734319626">Viber</a>
-                <a class="btn btn--line btn--sm" href="tel:+380734319626">Подзвонити</a>
-              </span>
+          <form class="form" id="booking-form" novalidate>
+            <div class="field">
+              <label for="f-name">Ім'я</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" required placeholder="Як до вас звертатися">
+              <span class="field__err" id="f-name-err"></span>
             </div>
-          </div>
-        </form>
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+380 __ ___ __ __">
+              <span class="field__err" id="f-phone-err"></span>
+            </div>
+            <div class="field field--half">
+              <label for="f-plan">Абонемент</label>
+              <select id="f-plan" name="plan"></select>
+            </div>
+            <div class="field field--half">
+              <label for="f-trainer">Тренер</label>
+              <select id="f-trainer" name="trainer"></select>
+            </div>
+            <fieldset class="field chips">
+              <legend>Зручний час</legend>
+              <label><input type="radio" name="time" value="Ранок (07–12)"><span>Ранок</span></label>
+              <label><input type="radio" name="time" value="День (12–17)"><span>День</span></label>
+              <label><input type="radio" name="time" value="Вечір (17–22)" checked><span>Вечір</span></label>
+            </fieldset>
+
+            <button class="btn btn--gold btn--block btn--lg" type="submit">
+              <span class="when-idle">Надіслати заявку</span><span class="when-sending">Надсилаємо…</span>
+            </button>
+            <p class="form__note">Або зателефонуйте: <a href="tel:+380734319626">073 431 96 26</a></p>
+
+            <div class="form__result" role="status" aria-live="polite">
+              <div class="res res--success"><b>Дякуємо, заявку отримано.</b> Адміністратор передзвонить найближчим часом.</div>
+              <div class="res res--error"><b>Не вдалося надіслати.</b> Будь ласка, зателефонуйте: <a href="tel:+380734319626">073 431 96 26</a>.</div>
+              <div class="res res--fallback">
+                <b>Майже готово.</b> Текст заявки скопійовано — надішліть його у Viber або зателефонуйте.
+                <span class="res__actions">
+                  <a class="btn btn--gold btn--sm" href="viber://chat?number=%2B380734319626">Viber</a>
+                  <a class="btn btn--line btn--sm" href="tel:+380734319626">Подзвонити</a>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
     <!-- ================= КОНТАКТИ ================= -->
-    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
-      <div class="wrap">
-        <p class="mono label">05 / Як дійти</p>
-        <!-- TODO: уточнити адресу (в Instagram також є геомітка «Гоголя 26») -->
-        <h2 class="contacts__addr" id="contacts-title">Грушевського, 17 <span class="serif">Васильків</span></h2>
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts">
+        <div class="contacts__info reveal">
+          <p class="eyebrow">05 · Контакти</p>
+          <!-- TODO: уточнити адресу (в Instagram також є геомітка «Гоголя 26») -->
+          <h2 class="h2" id="contacts-title">Грушевського, 17 <span>Васильків</span></h2>
 
-        <div class="contacts__grid">
-          <div class="contacts__info">
-            <span class="status status--big" data-status><i></i><span>…</span></span>
-            <table class="timetable">
-              <caption class="sr-only">Графік роботи</caption>
-              <tbody data-schedule></tbody>
-            </table>
-            <div class="contacts__actions">
-              <a class="btn btn--flame" href="https://www.google.com/maps/dir/?api=1&destination=%D0%B2%D1%83%D0%BB.+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE+17%2C+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D1%96%D0%B2" target="_blank" rel="noopener">Прокласти маршрут <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <a class="link" href="tel:+380734319626">073 431 96 26</a>
-              <a class="link" href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener">Instagram</a>
-            </div>
+          <p class="status"><i class="dot" data-dot></i><span data-status-long>Графік роботи</span></p>
+          <ul class="hours" data-hours></ul>
+
+          <div class="contacts__actions">
+            <a class="btn btn--gold" href="https://www.google.com/maps/dir/?api=1&destination=%D0%B2%D1%83%D0%BB.+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE+17%2C+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D1%96%D0%B2" target="_blank" rel="noopener">Прокласти маршрут</a>
+            <a class="btn btn--line" href="tel:+380734319626">073 431 96 26</a>
           </div>
-          <div class="map">
-            <iframe title="Olimp Gym на карті" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE+17%2C+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D1%96%D0%B2&z=16&output=embed"></iframe>
-          </div>
+          <a class="insta" href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-insta"/></svg>@olimpgym_fitnessclub</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Olimp Gym на карті" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE+17%2C+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D1%96%D0%B2&z=16&output=embed"></iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer__row mono">
-      <a href="tel:+380734319626">073 431 96 26</a>
-      <a href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener">@olimpgym_fitnessclub</a>
-      <span>© <span data-year>2026</span> Olimp Gym</span>
+    <div class="container footer__inner">
+      <a class="brand" href="#top" aria-label="Olimp Gym — на початок">
+        <svg class="brand__mark" aria-hidden="true"><use href="#i-torch"/></svg>
+        <span class="brand__name">Olimp<small>Fitness club</small></span>
+      </a>
+      <nav class="footer__nav" aria-label="Нижня навігація">
+        <a href="#club">Клуб</a><a href="#prices">Абонементи</a><a href="#trainers">Тренери</a><a href="#contacts">Контакти</a>
+        <a href="https://www.instagram.com/olimpgym_fitnessclub/" target="_blank" rel="noopener">Вакансії</a>
+      </nav>
+      <p class="footer__copy">© <span data-year>2026</span> Olimp Gym · Васильків</p>
     </div>
-    <p class="footer__word" aria-hidden="true">OLIMP</p>
   </footer>
 
   <div class="dock" aria-label="Швидкі дії">
     <a class="btn btn--line" href="tel:+380734319626">Подзвонити</a>
-    <a class="btn btn--flame" href="#join">Записатися</a>
+    <a class="btn btn--gold" href="#booking">Записатися</a>
   </div>
 
-  <dialog class="drawer" id="trainer-drawer" aria-labelledby="drawer-name">
-    <button class="drawer__close" type="button" aria-label="Закрити" data-close><svg><use href="#i-close"/></svg></button>
-    <div class="drawer__body" data-drawer-body></div>
+  <dialog class="lightbox" id="lightbox" aria-label="Фото залу">
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Закрити" data-lb="close"><svg><use href="#i-close"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Попереднє фото" data-lb="prev"><svg><use href="#i-prev"/></svg></button>
+    <figure class="lightbox__fig"><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Наступне фото" data-lb="next"><svg><use href="#i-next"/></svg></button>
   </dialog>
 
   <script src="js/data.js"></script>
