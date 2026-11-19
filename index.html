@@ -17,7 +17,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Oswald:wght@500;600;700&subset=cyrillic,cyrillic-ext,latin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <script type="application/ld+json">
@@ -161,7 +161,7 @@
     <section class="hall" id="hall" aria-labelledby="hall-title">
       <div class="hall__stage">
         <div class="hall__head wrap">
-          <h2 class="h2" id="hall-title">Зал</h2>
+          <div><p class="kicker">Простір</p><h2 class="h2" id="hall-title">Зал</h2></div>
           <p class="hall__sub">Світлий, з панорамними вікнами й обладнанням світового рівня. <span class="hall__hint">Гортайте →</span></p>
         </div>
         <!-- TODO: замінити згенеровані фото на реальні фото залу -->
@@ -181,26 +181,25 @@
 
     <!-- ================= ЦІНИ ================= -->
     <section class="prices section" id="prices" aria-labelledby="prices-title">
-      <div class="wrap prices__grid">
-        <div class="prices__side" data-reveal>
-          <h2 class="h2" id="prices-title">Ціни</h2>
-          <p class="muted">Оберіть формат — ми підставимо його в заявку.</p>
-
+      <div class="wrap">
+        <div class="section__head section__head--row" data-reveal>
+          <div>
+            <p class="kicker">Абонементи</p>
+            <h2 class="h2" id="prices-title">Ціни</h2>
+            <p class="muted">Оберіть формат — ми підставимо його в заявку.</p>
+          </div>
           <div class="switch" role="radiogroup" aria-label="Тип абонемента">
-            <button type="button" role="radio" aria-checked="true" data-kind="full">Повний<small>07–22</small></button>
-            <button type="button" role="radio" aria-checked="false" data-kind="morning">Ранковий<small>07–16</small></button>
+            <button type="button" role="radio" aria-checked="true" data-kind="full">Повний <small>07–22</small></button>
+            <button type="button" role="radio" aria-checked="false" data-kind="morning">Ранковий <small>07–16</small></button>
             <span class="switch__thumb" aria-hidden="true"></span>
           </div>
-
-          <ul class="extras" data-extras></ul>
         </div>
 
-        <div class="board" data-reveal>
-          <div class="board__head" aria-hidden="true">
-            <span>Термін</span><span>Ціна</span><span>За місяць</span><span></span>
-          </div>
-          <ul class="board__rows" data-board aria-live="polite"></ul>
-          <p class="board__note" data-board-note></p>
+        <ul class="plans" data-board aria-live="polite"></ul>
+
+        <div class="prices__foot" data-reveal>
+          <ul class="extras" data-extras></ul>
+          <p class="plans__note" data-board-note></p>
         </div>
       </div>
     </section>
@@ -209,6 +208,7 @@
     <section class="trainers section" id="trainers" aria-labelledby="trainers-title">
       <div class="wrap">
         <div class="section__head" data-reveal>
+          <p class="kicker">Команда</p>
           <h2 class="h2" id="trainers-title">Тренери</h2>
           <p class="muted">Поставлять техніку й складуть програму під вашу ціль. Натисніть на тренера, щоб дізнатися більше.</p>
         </div>
@@ -220,6 +220,7 @@
     <section class="join section" id="join" aria-labelledby="join-title">
       <div class="wrap join__grid">
         <div class="join__intro" data-reveal>
+          <p class="kicker">Запис</p>
           <h2 class="h2" id="join-title">Запис на&nbsp;пробне</h2>
           <p class="muted">Залиште номер — адміністратор передзвонить і підбере зручний час.</p>
           <div class="join__direct">
@@ -281,6 +282,7 @@
     <section class="contacts section" id="contacts" aria-labelledby="contacts-title">
       <div class="wrap contacts__grid">
         <div class="contacts__info" data-reveal>
+          <p class="kicker">Контакти</p>
           <h2 class="h2" id="contacts-title">Як дійти</h2>
           <!-- TODO: уточнити адресу (в Instagram також є геомітка «Гоголя 26») -->
           <p class="contacts__addr">вул. Грушевського, 17<br><span>Васильків, Київська обл.</span></p>

@@ -144,19 +144,26 @@
     });
     const best = rows.length > 1 ? rows.reduce((a, b) => (b.perMonth < a.perMonth ? b : a)) : null;
 
-    board.innerHTML = rows.map(r => `
-      <li>
-        <button type="button" class="row${r === best ? ' is-best' : ''}" data-plan="${planId(kind, r.months)}"
+    board.dataset.count = rows.length;
+    board.innerHTML = rows.map((r, i) => {
+      let per;
+      if (kind === 'morning') per = `на ${fmt(r.saving)} грн дешевше за повний`;
+      else if (r.months === 1) per = 'Щоб спробувати клуб';
+      else per = `${fmt(r.perMonth)} грн / місяць`;
+      return `
+      <li class="plan${r === best ? ' is-best' : ''}" style="--n:${i}">
+        <button type="button" class="plan__card" data-plan="${planId(kind, r.months)}"
           aria-label="${plan.label} абонемент, ${monthsWord(r.months)}, ${fmt(r.price)} гривень. Обрати">
-          <span class="row__term">${monthsWord(r.months)}<small>${plan.hours}</small>${r === best ? '<span class="row__badge">Найвигідніше</span>' : ''}</span>
-          <span class="row__price">${fmt(r.price)}<sub>грн</sub></span>
-          <span class="row__month">
-            ${r.months > 1 ? `<span>${fmt(r.perMonth)} грн/міс</span>` : ''}
-            ${r.saving > 0 ? `<span class="row__save">−${fmt(r.saving)} грн</span>` : ''}
-          </span>
-          <span class="row__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+          ${r === best ? '<span class="plan__badge">Найвигідніше</span>' : ''}
+          <span class="plan__term">${monthsWord(r.months)}</span>
+          <span class="plan__hours">${plan.hours}</span>
+          <span class="plan__price">${fmt(r.price)}<small>грн</small></span>
+          <span class="plan__per">${per}</span>
+          ${kind === 'full' && r.saving > 0 ? `<span class="plan__save">Економія ${fmt(r.saving)} грн</span>` : ''}
+          <span class="plan__cta">Обрати <i aria-hidden="true"><svg><use href="#i-arrow"/></svg></i></span>
         </button>
-      </li>`).join('');
+      </li>`;
+    }).join('');
 
     boardNote.textContent = kind === 'morning'
       ? `Ранковий абонемент діє з 07:00 до 16:00 і продається на 1 місяць. Економія — порівняно з повним (${fmt(D.baseMonthly)} грн).`
@@ -186,9 +193,13 @@
 
   /* ---------- Тренери ---------- */
   const initials = name => name.split(' ').map(w => w[0]).join('');
-  const media = t => t.photo
-    ? `<img src="${t.photo}" alt="${t.name}" loading="lazy">`
-    : `<div class="trainer__ph" aria-hidden="true"><span>${initials(t.name)}</span><svg><use href="#i-torch"/></svg></div>`;
+  // Тло-заглушка, поки немає фото тренера (TODO: додати фото в data.js)
+  const PH = ['assets/photos/dumbbells.webp', 'assets/photos/hero.webp', 'assets/photos/functional.webp'];
+  const media = t => {
+    if (t.photo) return `<img src="${t.photo}" alt="${t.name}" loading="lazy">`;
+    const bg = new URL(PH[D.trainers.indexOf(t) % PH.length], document.baseURI).href;
+    return `<div class="trainer__ph" style="--ph:url('${bg}')" aria-hidden="true"><svg><use href="#i-torch"/></svg><span>${initials(t.name)}</span></div>`;
+  };
 
   $('[data-trainers]').innerHTML = D.trainers.map(t => `
     <li>
